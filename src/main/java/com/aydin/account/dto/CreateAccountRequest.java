@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 
 public class CreateAccountRequest {
 
-    @NotBlank
+    @NotBlank(message = "Customer Id değeri boş olamaz")
     private String customerId;
     @Min(0)
     private BigDecimal initialCredit;
